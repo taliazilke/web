@@ -1,0 +1,7 @@
+Seletores css são a forma de vincular uma regra css a elementos HTML, eles funcionam por espeficidade de forma que a regra css com seletor mais especifico para um determinado elemento é que tem a regra aplicada a ele.
+Os tipos de seletores CSS são:
+
+*: universal
+elemento: permite definir
+
+id: Seletor por identificador unico, permite identificar ou especificar unicamente um elemnto HTML por meio da propriedade id definida para o elemento HTML.

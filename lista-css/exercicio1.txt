@@ -1,0 +1,13 @@
+Uma regra css é uma declaração de conjunto de propriedades de estilo, que pode ser aplicada em um ou mais elementos HTML, de acordo com Seletor escolhido para a regra. A regra css é delimitada por um par de chaves com a informação do estilo (proprieda:valor).
+
+Exemplo de seletor:
+img { /* img é um seletor, sendo uma tag de imagem */
+    border-radius: 50%;
+}
+
+Exemplo de propriedade e valor:
+p {
+    border-width: 1px;
+    border-style: outset;
+    border-color: blue;
+}
