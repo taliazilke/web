@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            display: grid;
+            grid-template-areas: 
+            "head   head    head"
+            "banner banner banner"
+            "menu   main    aside"
+            "footer footer  footer";
+        }
+        @media (max-width: 500px) and (max-width: 600px) {
+            body{
+                display: grid;
+                grid-template-areas: 
+                "head"
+                "banner"
+                "menu"
+                "main"
+                "aside"
+                "footer";}
+        }
+        .d1{
+            grid-area: head;
+            text-align: center;
+            background-color:cornflowerblue;
+            height: 200px;
+        }
+        .d2{
+            grid-area: banner;
+            background-color:darkslateblue;
+            height: 200px;
+        }
+        .d3{
+            grid-area: menu;
+            background-color: darkseagreen;
+            height: 200px;
+        }
+        .d4{
+            grid-area: main;
+            background-color: mistyrose;
+            height: 200px;
+        }
+        .d5{
+            grid-area: aside;
+            background-color: pink;
+            height: 200px;
+        }
+        .d6{
+            grid-area: footer;
+            background-color:palevioletred;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">HEAD</div>
+    <div class="d2">Banner</div>
+    <div class="d3">Menu</div>
+    <div class="d4">Main</div>
+    <div class="d5">Aside</div>
+    <div class="d6">Footer</div>
+</body>
+</html>
