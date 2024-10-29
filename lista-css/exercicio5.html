@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<title>Exemplo especificidade de seletores</title>
+   <style>
+      /*regra 1*/ li{color:red;}
+      /*regra 2*/ .churras{color:green;}
+      /*regra 3*/ .fruta{color:gray}
+      /*regra 4*/ li+li.churras{color: white;}
+      /*regra 5*/ .churras[draggable="true"]{color: magenta;}
+      /*regra 6*/ #lip1,#lip2,#lip3{color:blue}
+      /*regra 7*/ #lip3.fruta{color:orange}
+      /*regra 8*/ ol>li.churras#lip5{color:purple}
+   </style>
+</head>
+<body> 
+    <div class="secao"> 
+        <h4>Seja o trecho de código HTML e CSS da figura a seguir e explique porque cada regra foi aplicada em cada item.</h4> 
+    <br><ol>
+   <!--item 1--> <li id="lip0">Abacaxi - vermelho, regra 1</li>
+   <!--item 2--> <li           class="fruta">Melão - cinza, regra 3</li>
+   <!--item 3--> <li id="lip2" class="fruta">Pera - azul, regra 6</li>
+   <!--item 4--> <li id="lip3" class="fruta">Uva - laranja, regra 7</li>
+   <!--item 5--> <li id="lip4" class="fruta">Maçã - cinza, regra 3</li>
+   <!--item 6--> <li           class="churras">Carne - branco, regra 4 é maior do que a 3</li>
+   <!--item 7--> <li           class="churras">Linguiça - branco, regra 4</li>
+   <!--item 8--> <li id="lip7" class="churras" draggable="true">Pão de alho - magenta, regra 5</li>
+    </ol>   
+    </div>
+</body>
+    
