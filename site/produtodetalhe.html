@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUREA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+.produto-detalhe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+.button{
+    padding: 0.5rem 1rem;
+    background-color: #5e0e0e;
+    color: #fff;
+    border: none;
+    border-radius: 5px; 
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="AUREA.png" alt="AUREA" width="200" height="70"></div>
+        <nav class="nav">
+            <a href="index.html">HOME</a>
+            <a href="#novidades">NOVIDADES</a>
+            <a href="produtos.html">MODA FEMININA</a>
+            <a href="carrinho.html">CARRINHO</a>
+            <a href="contato.html">CONTATO</a>
+        </nav>
+        <div class="search">
+            <form action="https://google.com.br" method="GET">
+                <input type="text" id="buscar" name="buscar" placeholder="Buscar Produtos">
+                <input type="submit" value="Buscar">
+            </form>
+        </div>
+    </header>
+
+    <section class="produto-detalhe">
+        <img src="blusarenda.jpg" alt="Blusa Renda" width="300" height="auto">
+        <div class="produto-info">
+            <h2>KAIA TOP</h2>
+            <p>Top de malha texturizada com babados divertidos e decote quadrado.<br> Composição: Malha 100% poliéster <br> A modelo está usando tamanho P e tem 1,75 de altura, 86 cm de busto, 60 cm de cintura e 87 cm de quadril.</p>
+            <p>Preço: R$ 99,90</p>
+            <button class="button">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Rua Oscar Freire, 124. São Paulo - SP</p>
+        <p>© 2024 AUREA. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
