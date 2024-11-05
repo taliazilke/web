@@ -10,7 +10,6 @@ body {
     line-height: 1.6;
 }
 
-/* Cabeçalho */
 .header {
     display: flex;
     justify-content: space-around;
@@ -55,19 +54,16 @@ body {
     border-radius: 5px;
 }
 
-/* Banner */
 .banner {
     position: relative;
     text-align: center;
     color: #fff;
 }
-
 .banner img {
     width: 100%;
     height: auto;
     max-height: 400px;
 }
-
 .banner-text {
     position: absolute;
     top: 50%;
@@ -86,16 +82,13 @@ body {
     margin-top: 10px;
 }
 
-/* Destaques de Produtos */
 .produtos {
     padding: 2rem;
     text-align: center;
 }
-
 .produtos h2 {
     margin-bottom: 1rem;
 }
-
 .produtos-container {
     display: flex;
     justify-content: center;
@@ -137,7 +130,7 @@ body {
     border-radius: 5px;
 }
 
-/* Rodapé */
+
 .footer {
     padding: 1rem;
     text-align: center;
@@ -153,20 +146,16 @@ body {
     text-align: center;
 }
 
-        /* Informações de Contato */
         .contato-info {
             text-align: center;
             padding: 2rem;
             background-color: #f9f9f9;
             color: #333;
         }
-
         .contato-info h2 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
-
-        /* Formulário de Contato */
         .formulario-contato {
             max-width: 600px;
             margin: 2rem auto;
@@ -175,7 +164,6 @@ body {
             border-radius: 5px;
             background-color: #fefefe;
         }
-
         .formulario-contato h2 {
             text-align: center;
             color: #5e0e0e;
@@ -183,14 +171,12 @@ body {
             margin-bottom: 1rem;
         }
 
-        /* Estilos dos Campos do Formulário */
         .formulario-contato label {
             display: block;
             margin-bottom: 0.5rem;
             font-weight: bold;
             color: #333;
         }
-
         .formulario-contato input[type="text"],
         .formulario-contato input[type="email"],
         .formulario-contato textarea {
@@ -206,7 +192,6 @@ body {
             resize: vertical;
         }
 
-        /* Botão de Envio */
         .formulario-contato .btn {
             display: inline-block;
             width: 100%;
@@ -220,30 +205,6 @@ body {
             cursor: pointer;
             text-align: center;
             transition: background-color 0.3s;
-        }
-
-        /* Estilos Responsivos */
-        @media (max-width: 768px) {
-            .formulario-contato, .contato-info {
-                padding: 1rem; /* Menos padding em telas menores */
-            }
-
-            .header h1 {
-                font-size: 1.5rem; /* Ajuste no tamanho do texto do cabeçalho */
-            }
-
-            .formulario-contato h2, .contato-info h2 {
-                font-size: 1.3rem; /* Tamanho do texto para cabeçalhos menores */
-            }
-        }
-
-        /* Estilos para o Chat */
-        .chat {
-            margin-top: 2rem;
-            padding: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f9f9f9;
         }
         .contato{
             text-align: center;
