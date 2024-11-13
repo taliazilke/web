@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button on click="imprime();">imprime</button>
+    <button id="btnclick">0</button>
+    <script>
+        /*Escreva hello em tres diferentes saidas, em seguida encapsue isso em uma função */
+        function imprime(){
+        let msg="Hello"
+        console.log(msg);
+        alert(msg)
+        document.body.innerHTML=msg;
+        }
+
+        /* para vincular um evento do navegador ao um elemento HTML 
+        utilizamos a função e.addEventListener("evento", f()=>{}) */
+        var btnclick=document.querySelector("#btnclick");
+        function contaClick(){
+            let num=Number.parseInt(btnclick.innerHTML)
+            btnclick.innerHTML=num+1
+            /*let b=document.querySelector("#btnclick")
+            b.innerHTML=Number.parseInt(document.querySelector("#btnclick").innerHTML)+1 */
+        }
+        /*let btnclick=document.querySelector("#btnclick");*/
+        btnclick.addEventListener("click",contaClick)
+    </script>
+</body>
+</html>
