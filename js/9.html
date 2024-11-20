@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            min-height: 100svh;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="text">
+        <button id="btnverifica">Botão</button>
+        <p id="resultado"></p>
+    </div>
+    <script>
+        let presult=document.querySelector(#resultado);
+        let inputText=document.querySelector(#text);
+        function hepalindrome(s){
+            for (let i =0; i < s.length/2; i++){
+                if (s[i] !== s[s.length - 1 - i] {
+                    return false;
+                })
+            }
+            return true;
+        }
+        function hepalindrome2(inicial){
+            return inicial==inicial.split("").reverse().join("")
+        }
+        document.querySelector("#btnverifica").addEventListener("click", ()=> {
+            if(hepalindrome2(inputText.value)){
+                presult.innerHTML= "É Palindromo";
+                presult.style.color="#00000"
+            } else {
+                presult.innerHTML= "Não é Palindromo";
+                presult.style.color="red"
+            }
+        }); 
+    </script>
+</body>
+</html>
