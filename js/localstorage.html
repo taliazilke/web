@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="nota" type="text">
+    <button id="salvar">salvar</button>
+    <ul>
+
+    </ul>
+    <script>
+        let inputnota=document.querySelector("#nota");
+        let bntsalvar=document.querySelector("#salvar");
+        let lista=document.querySelector("#ul");
+        //let contador=0;
+        let notas=[];
+        bntsalvar.addEventListener("click", ()=>{
+            notas.push(inputnota.value);
+            localStorage.setItem(notas.length-1,notas[notas.length-1]);
+            atualizaLista();
+        })
+        function atualizaLista(){
+            lista.innerHTML="";
+            notas.forEach((nota,index)=>{
+            //contador++;
+            //localStorage.setItem("msg"+contador,inputnota.value);
+            //cria um novo elemento no dom do tipo <li>
+            let li=document.createElement("li");
+            li.innerText=inputnota.value; // copia o valor para li
+            lista.appendChild(li); // adiciona o elemento como filho ul
+            inputnota.value="";
+            })
+        }
+        function carregaNotas(){
+            notas=[];
+            //carrega notas para array e atualiza
+            for ( let i=0; i<localStorage.length; i++){
+                let key = localStorage.key(i) // pega chave da posição i localstorage
+                notas[key]=localStorage.getItem(key) //recupera o dado da key e salva na posição
+                atualizaLista();
+            }
+        }
+
+        carregaNotas();
+    </script>
+</body>
+</html>

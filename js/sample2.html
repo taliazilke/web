@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100svh;
+        }
+        #tecla{
+            word-wrap: break-word;
+            white-space: normal;
+            max-width: 100%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <pre id="tecla" draggable="true">.</pre>
+    <script>
+        let ptecla=document.querySelector("#tecla");
+        var evento;
+        document.addEventListener("mousemove", (e)=>{
+            e; // neste contexto e é nosso evento
+            evento=e;
+            console.log(e.keyCode);
+            ptecla.innerHTML+=e.key;
+        });
+    </script>
+</body>
+</html>
